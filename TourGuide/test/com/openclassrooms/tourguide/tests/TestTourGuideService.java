@@ -1,23 +1,25 @@
-package com.openclassrooms.tourguide;
+package com.openclassrooms.tourguide.tests;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertTrue;
+
 
 import java.util.List;
 import java.util.UUID;
 
-import org.junit.jupiter.api.Disabled;
-import org.junit.jupiter.api.Test;
 
 import gpsUtil.GpsUtil;
 import gpsUtil.location.Attraction;
 import gpsUtil.location.VisitedLocation;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 import rewardCentral.RewardCentral;
 import com.openclassrooms.tourguide.helper.InternalTestHelper;
 import com.openclassrooms.tourguide.service.RewardsService;
 import com.openclassrooms.tourguide.service.TourGuideService;
 import com.openclassrooms.tourguide.user.User;
 import tripPricer.Provider;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class TestTourGuideService {
 

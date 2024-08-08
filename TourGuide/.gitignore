@@ -1,0 +1,18 @@
+# IntelliJ IDEA files
+.idea/
+.idea*
+*.idea
+*.iml
+*.iws
+# Log files
+*.log
+
+# Temporary files
+*.tmp
+*.swp
+# Eclipse files
+.classpath
+.project
+.settings/
+# Maven target directory
+target/
