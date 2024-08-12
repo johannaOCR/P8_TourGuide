@@ -9,7 +9,6 @@ import java.util.UUID;
 import gpsUtil.GpsUtil;
 import gpsUtil.location.Attraction;
 import gpsUtil.location.VisitedLocation;
-import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import rewardCentral.RewardCentral;
 import com.openclassrooms.tourguide.helper.InternalTestHelper;
@@ -48,7 +47,6 @@ public class TestRewardsService {
 		assertTrue(rewardsService.isWithinAttractionProximity(attraction, attraction));
 	}
 
-	@Disabled // Needs fixed - can throw ConcurrentModificationException
 	@Test
 	public void nearAllAttractions() {
 		GpsUtil gpsUtil = new GpsUtil();

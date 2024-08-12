@@ -68,9 +68,14 @@ public class User {
 	public void clearVisitedLocations() {
 		visitedLocations.clear();
 	}
-	
+
+	/**
+	 * Function who try to insert a new UserReward
+	 * @param userReward
+	 * @return
+	 */
 	public void addUserReward(UserReward userReward) {
-		if(userRewards.stream().filter(r -> !r.attraction.attractionName.equals(userReward.attraction)).count() == 0) {
+		if(userRewards.stream().noneMatch(r -> true)) {
 			userRewards.add(userReward);
 		}
 	}
